@@ -1,0 +1,21 @@
+/.idea
+.env
+
+# python
+.venv
+__pycache__
+
+
+allure-results
+allure-report
+allure-report-single
+browser-state.json
+tracing
+videos
+
+debug.log
+hs_err_pid31556.log
+info.log
+maxdan-components
+maxdan-components.pub
+report.log
