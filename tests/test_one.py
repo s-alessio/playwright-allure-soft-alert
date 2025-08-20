@@ -19,3 +19,10 @@ async def test_example2(main_page: MainPage):
     await main_page.top_menu.api_link.check_have_text("API111")
 
 
+async def test_example3(main_page: MainPage):
+    url = settings.get_base_url()
+    await main_page.visit(url)
+    await main_page.top_menu.logo_text.check_have_text("Playwright for Python")
+    await main_page.top_menu.docs_link.check_have_text("Docs")
+    await main_page.top_menu.api_link.check_have_text("API")
+
