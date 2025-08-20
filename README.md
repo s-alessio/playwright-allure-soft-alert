@@ -146,7 +146,7 @@ async def after_each_test(request):
 
 With this setup, tests marked @pytest.mark.soft collect all assertion errors, attach them into Allure, and finally fail the test with a summarized report. 
 
-How it appears in Allure reports::
+How it appears in Allure reports:
 1. Tests with soft-assert failures are marked Failed.
 2. The steps where the failures occurred remain Passed (green) because the assertions were collected softly; each such step includes an attachment with the error details.
 3. The test includes a final summary attachment listing all soft-assert failures captured during the run.
